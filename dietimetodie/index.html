@@ -1,0 +1,276 @@
+    <!doctype html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Die Time To Die, D2, Diablo, Diablo 2, Diablo II, Blizzard, Battle.net, Paladin, Sorceress, Amazon, Assassin, Druid, Barbarian, Necromancer">
+        <!-- VALIDATION FOR GOOGLE SEO-->
+        <meta name="google-site-verification" content="jU9XJcYQyItzxUraRVwEZbF6s6vI2QN-WugKyB_zkO8" />
+        <!-- END FOR SEO VALIDATION-->
+        <meta name="description" content="Diablo 2 Threatening sounds">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/blocs.min.js"></script>
+        <script src="js/scrolltop.js"></script>
+        <title>Time to Die!</title>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+
+        <!-- Automatically provides/replaces `Promise` if missing or broken. -->
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script> 
+
+        <!-- Minified version of `es6-promise-auto` below. -->
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script> 
+        <script type="text/javascript">
+            function downloadJSAtOnload() {
+                "use strict";
+                var elemWelcome = document.createElement("audio"), elemScriptThreat = document.createElement("script"), randSound = Math.floor((Math.random() * 28) + 1);
+                elemScriptThreat.type = "text/javascript";
+                elemScriptThreat.src = "js/threat.js";
+                elemWelcome.id = "audio-welcome";
+                elemWelcome.src = "sounds/Entrance/Welcome" + randSound + ".flac";
+                document.getElementById("page-body").appendChild(elemScriptThreat);
+                document.getElementById("page-body").appendChild(elemWelcome);
+
+                elemWelcome.play();
+            }
+        </script>
+        <script type="text/javascript">
+            window.onload = downloadJSAtOnload;
+        </script>
+    </head>
+    <body id="page-body">
+    <button class="hide-on-mobile" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Main container -->
+    <div class="page-container">
+    <!-- Navigation Bloc -->
+    <div class="bloc-mod bg-background-header d-bloc" id="bloc-0">
+        <div class="container bloc-sm">
+            <nav class="navbar row">
+                <div class="navbar-header">
+                    <a id="parent" class="navbar-brand">
+                        <img src="img/diablo-logo-transparent-animated.gif" alt="logo" width="150" height="64" onclick="playSoundChaosDebug();"/>
+                        <div id="popup">SoundChaosDebug!</div>
+                    </a>
+                    <!--<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>-->
+                </div>
+                <div class="collapse navbar-collapse navbar-1">
+                    <!--<ul class="site-navigation nav navbar-nav">
+                        <li>
+                            <a class="ltc-red" href="index.html">Sanctuary</a>
+                        </li>
+                        <li>
+                            <a class="ltc-red" href="impressions.html">Voice Impressions</a>
+                        </li>
+                    </ul>-->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navigation Bloc END -->
+    <!-- bloc-1 -->
+    <div class="bloc bg-background-catacombs-hd tc-black l-bloc b-parallax" id="bloc-1">
+      <div class="bg-background-divider">
+        <img src="img/backgrounds/divider_center.png" />
+      </div>
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/amazon-big.jpg" data-caption="Amazon, This powerful woman warrior belongs to nomadic bands who roam the plains near the South Sea."><img src="img/classes/amazon.jpg" class="center-block img-frame" alt="Diablo 2 Amazon" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="onClick('Amazon')">Amazon</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--This powerful woman warrior belongs to nomadic bands who roam the plains near the South Sea.-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/assassin-big.jpg" data-caption="The Assassins are an ancient order originally founded by the Vizjerei to hunt down and eliminate rogue mages within their own ranks."><img src="img/classes/assassin.jpg" class="center-block img-frame" alt="Diablo 2 Assassin" height="300" width="200" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="onClick('Assassin')">Assassin</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--The Assassins are an ancient order originally founded by the Vizjerei to hunt down and eliminate rogue mages within their own ranks.-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/barbarian-big.jpg" data-caption="The Barbarian, a member of any of several tribes on the fringes of civilization, rebuffs the influence of those he sees as soft and weak."><img src="img/classes/barbarian.jpg" class="center-block img-frame" alt="Diablo 2 Barbarian" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="onClick('Barbarian')">Barbarian</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--The Barbarian, a member of any of several tribes on the fringes of civilization, rebuffs the influence of those he sees as soft and weak.-->
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/druid-big.jpg" data-caption="The Druids are a race of nomadic warrior-poet-kings. Driven from their homelands long ago by their Barbarian brothers, the Druid tribes live primarily in the northern forests."><img src="img/classes/druid-big.jpg" class="center-block img-frame" alt="Diablo 2 Druid" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="onClick('Druid')">Druid</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--The Druids are a race of nomadic warrior-poet-kings. Driven from their homelands long ago by their Barbarian brothers, the Druid tribes live primarily in the northern forests.-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/necromancer-big.jpg" data-caption="From the steamy recesses of the southern swamps comes a figure cloaked in mystery. He is an unseemly form of sorcerer whose spells deal with the raising of the dead and the summoning and control of various creatures for his purposes."><img src="img/classes/necromancer.jpg" class="center-block img-frame" alt="Diablo 2 Necromancer" height="300" width="200" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="onClick('Necromancer')">Necromancer</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--From the steamy recesses of the southern swamps comes a figure cloaked in mystery. He is an unseemly form of sorcerer whose spells deal with the raising of the dead and the summoning and control of various creatures for his purposes.-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/paladin-big.jpg" data-caption="The Knights of Westmarch who felled the armies of mighty Leoric are pure at heart and closely follow the teachings of Zakarum, the Religion of the Light."><img src="img/classes/paladin.jpg" class="center-block img-frame" alt="Diablo 2 Paladin" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="onClick('Paladin')">Paladin</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--The Knights of Westmarch who felled the armies of mighty Leoric are pure at heart and closely follow the teachings of Zakarum, the Religion of the Light.-->
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/sorceress-big.jpg" data-caption="A rebellious woman who has wrested the secrets of magic use from the male dominated Mage-Clans of the East, the Sorceress is an expert in mystical creation ex nihilo."><img src="img/classes/sorceress.jpg" class="center-block img-frame" alt="Diablo 2 Sorceress" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="onClick('Sorceress')">Sorceress</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--A rebellious woman who has wrested the secrets of magic use from the male dominated Mage-Clans of the East, the Sorceress is an expert in mystical creation ex nihilo.-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/cain-big.jpg" data-caption="A Horadrim sage, schooled in the most arcane history and lore, who can advise you."><img src="img/classes/cain.jpg" class="center-block img-frame" alt="Diablo 2 Deckard Cain" height="300" width="200" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="playCain('Cain')">Deckard Cain</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--A Horadrim sage, schooled in the most arcane history and lore, who can advise you.-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/classes/tyrael2-big.jpg" data-caption="Tyrael, the Archangel of Justice. He is a stalwart defender of Sanctuary and mankind."><img src="img/classes/tyrael2.jpg" class="center-block img-frame" alt="Diablo 2 Archangel Tyrael" height="300" width="200" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="playTyrael('Tyrael')">Archangel Tyrael</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--Tyrael, the Archangel of Justice. He is a stalwart defender of Sanctuary and mankind.-->
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/prime/diablo-big.jpg" data-caption="You are all deceived, my brothers. A new age has already begun. Can you not sense them? Ugly creatures, born in shadow. They feel terror, hatred, and the desire to destroy. Yes, but they are not ours yet. They will open their world to us very soon. An invitation we cannot refuse."><img src="img/prime/diablo.jpg" class="center-block img-frame" alt="Prime Evil Diablo" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="playPrime('Diablo')">Diablo Lord of Terror</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--You are all deceived, my brothers. A new age has already begun. Can you not sense them? Ugly creatures, born in shadow. They feel terror, hatred, and the desire to destroy. Yes, but they are not ours yet. They will open their world to us very soon. An invitation we cannot refuse.-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/prime/baal-big.jpg" data-caption="I have walked the earth, always searching for that which will make me whole. High in the mountains of Kae Huron, deep within Mount Arreat lies that thing. I shall have it. My brothers will not have died in vain... and I shall rule unchallenged."><img src="img/prime/baal.jpg" class="center-block img-frame" alt="Prime Evil Baal" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="playPrime('Baal')">Baal Lord of Destruction</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--I have walked the earth, always searching for that which will make me whole. High in the mountains of Kae Huron, deep within Mount Arreat lies that thing. I shall have it. My brothers will not have died in vain...and I shall rule unchallenged.-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/prime/mephisto-big.jpg" data-caption="The skies shall rain fire, and the seas will become as blood. The righteous shall fall before the wicked, and all of Creation shall tremble before the burning standards of Hell!"><img src="img/prime/mephisto.jpg" class="center-block img-frame" alt="Prime Evil Mephisto" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="playPrime('Mephisto')">Mephisto Lord of Hatred</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--The skies shall rain fire, and the seas will become as blood. The righteous shall fall before the wicked, and all of Creation shall tremble before the burning standards of Hell!-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    
+                    <p class="sm-shadow text-center">
+                        <!--The skies shall rain fire, and the seas will become as blood. The righteous shall fall before the wicked, and all of Creation shall tremble before the burning standards of Hell!-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" data-lightbox="img/prime/andariel-big.jpg" data-caption="Andariel was the only female Evil. She aided the Lesser Evils for many years, but eventually she lost faith in their plots. Two decades ago, she chose to help Diablo during his resurgence and seized the Citadel of the Sightless Eye. Ultimately, she perished at the hands of brave heroes."><img src="img/prime/andariel.jpg" class="center-block img-frame" alt="Andariel" width="200" height="300" /></a>
+                    <h2 class="mg-md text-center tc-red">
+                        <a onclick="playPrime('Andariel')">Andariel Maiden of Anguish</a>
+                    </h2>
+                    <p class="sm-shadow text-center">
+                        <!--The skies shall rain fire, and the seas will become as blood. The righteous shall fall before the wicked, and all of Creation shall tremble before the burning standards of Hell!-->
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    
+                    <p class="sm-shadow text-center">
+                        <!--The skies shall rain fire, and the seas will become as blood. The righteous shall fall before the wicked, and all of Creation shall tremble before the burning standards of Hell!-->
+                    </p>
+                </div>
+            </div>
+        </div>
+      <div class="bg-background-divider4">
+        <div class="bg-background-divider5"></div>
+        <div class="bg-background-divider6"></div>
+      </div>
+    </div>
+    <!-- bloc-1 END -->
+    <div class="bloc-mod2 bg-background-header d-bloc tc-red" id="bloc-0">
+        <div class="container bloc-sm">
+            <div class="row voffset-lg navbar">
+                <div class="navbar-header col-sm-6">
+                    <img src="img/portraits/paladin-portrait-small.jpg" class="img-responsive center-block img-frame" alt="Olavo Andr� Parno" />
+                    <h3 class="text-center footer-info textborder-black">
+                        <a href="https://www.linkedin.com/in/olavoparno/">Olavo Parno</a>
+                    </h3>
+                    <p class="text-center textborder-black">
+                        Creator
+                    </p>
+                </div>
+                <div class="navbar-header col-sm-6">
+                    <img src="img/portraits/barb-portrait-small.jpg" class="img-responsive center-block img-frame" alt="Pedro Henrique Alvim Paradella" />
+                    <h3 class="text-center footer-info textborder-black">
+                        <a href="https://www.linkedin.com/in/pedroparadella/">Pedro Paradella</a>
+                    </h3>
+                    <p class="text-center textborder-black">
+                        Co-Creator
+                    </p>
+                </div>
+            </div>
+            <div class="voffset-lg nav-center footer">
+                <div class="copyrights">
+                    <p class="text-center textborder-black">All trademarks referenced herein are the properties of their respective owners.<br />Blizzard Entertainment, Inc. All rights reserved. Website meant only for fun.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer - bloc-0 END -->
+    <!-- Main container END -->
+    <!-- Default Statcounter code for dietimetodie https://olavoparno.github.io/dietimetodie -->
+    <script type="text/javascript">
+        var sc_project=10899983; 
+        var sc_invisible=1; 
+        var sc_security="3a47bb1c"; 
+    </script>
+    <script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async>
+    </script>
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics Made Easy - StatCounter" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/10899983/0/3a47bb1c/1/" alt="Web Analytics Made Easy - StatCounter" /></a>
+        </div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+    </body>
+    </html>
